@@ -17,11 +17,15 @@ var s_bird = dirImg + "bird.png";
 var s_abadi40 = dirImg + "Abadi40-ipad.png";
 var s_abadi40_fnt = dirImg + "Abadi40-ipad.fnt";
 
+// Sound
+var s_bgMusic = dirImg + "music.mp3";
+
 var g_resources = [
     { type:"image", src:s_background },
     { type:"image", src:s_img },
     { type:"image", src:s_aentos_logo },
     { type:"image", src:s_bird },
     { type:"image", src:s_abadi40 },
-    { type:"fnt", src:s_abadi40_fnt }
+    { type:"fnt", src:s_abadi40_fnt },
+    { type:"bgm", src:s_bgMusic }
 ];

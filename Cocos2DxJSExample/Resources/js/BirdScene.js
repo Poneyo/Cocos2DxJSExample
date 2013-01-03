@@ -11,7 +11,10 @@ var BirdScene = cc.Layer.extend({
         
         if (this._super()) {
             winSize = cc.Director.getInstance().getWinSize();
-                                
+        	
+        	// Play background music
+        	cc.AudioEngine.getInstance().playBackgroundMusic(s_bgMusic, true);
+        	        
             // Set background
             var bgndSprite = cc.Sprite.create(s_background, cc.rect(0, 0, winSize.width, winSize.height));
             bgndSprite.setPosition(cc.p(winSize.width / 2, winSize.height / 2));
