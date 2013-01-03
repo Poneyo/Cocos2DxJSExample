@@ -34,22 +34,20 @@ bool AppDelegate::applicationDidFinishLaunching()
     // set FPS. the default value is 1.0/60 if you don't call this
     pDirector->setAnimationInterval(1.0 / 60);
     
-    CCScene * pScene = CCScene::create();
+//    CCScene * pScene = CCScene::create();
     
     ScriptingCore* sc = ScriptingCore::getInstance();
     sc->addRegisterCallback(register_all_cocos2dx);
     sc->addRegisterCallback(register_cocos2dx_js_extensions);
-    sc->addRegisterCallback(register_chipmunk_manual);
-    sc->addRegisterCallback(register_CCPhysicsSprite);
-    sc->addRegisterCallback(register_CCBuilderReader);
-    
-
+//    sc->addRegisterCallback(register_chipmunk_manual);
+//    sc->addRegisterCallback(register_CCPhysicsSprite);
+//    sc->addRegisterCallback(register_CCBuilderReader);
     
     sc->start();
     
     CCScriptEngineProtocol *pEngine = ScriptingCore::getInstance();
     CCScriptEngineManager::sharedManager()->setScriptEngine(pEngine);
-    ScriptingCore::getInstance()->runScript("hello.js");
+    ScriptingCore::getInstance()->runScript("js/DemoGame-native.js");
     
     return true;
 }

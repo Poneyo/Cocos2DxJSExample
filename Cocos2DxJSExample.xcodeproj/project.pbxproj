@@ -290,6 +290,8 @@
 		F9F12FC0169467490014BCEE /* hello.js_BACK in Resources */ = {isa = PBXBuildFile; fileRef = F9F12FBF169467490014BCEE /* hello.js_BACK */; };
 		F9F12FC2169467490014BCEE /* menu1.png in Resources */ = {isa = PBXBuildFile; fileRef = F9F12FC1169467490014BCEE /* menu1.png */; };
 		F9F12FC4169467490014BCEE /* menu2.png in Resources */ = {isa = PBXBuildFile; fileRef = F9F12FC3169467490014BCEE /* menu2.png */; };
+		F9F12FDC169482B10014BCEE /* js in Resources */ = {isa = PBXBuildFile; fileRef = F9F12FDB169482B10014BCEE /* js */; };
+		F9F1300016948EAD0014BCEE /* res in Resources */ = {isa = PBXBuildFile; fileRef = F9F12FFF16948EAD0014BCEE /* res */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -905,6 +907,8 @@
 		F9F12FBF169467490014BCEE /* hello.js_BACK */ = {isa = PBXFileReference; lastKnownFileType = text; name = hello.js_BACK; path = Resources/hello.js_BACK; sourceTree = "<group>"; };
 		F9F12FC1169467490014BCEE /* menu1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu1.png; path = Resources/menu1.png; sourceTree = "<group>"; };
 		F9F12FC3169467490014BCEE /* menu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu2.png; path = Resources/menu2.png; sourceTree = "<group>"; };
+		F9F12FDB169482B10014BCEE /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = Resources/js; sourceTree = "<group>"; };
+		F9F12FFF16948EAD0014BCEE /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = Resources/res; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -975,6 +979,8 @@
 		F9F12C13169467440014BCEE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F9F12FFF16948EAD0014BCEE /* res */,
+				F9F12FDB169482B10014BCEE /* js */,
 				F9F12C14169467440014BCEE /* CloseNormal.png */,
 				F9F12C16169467440014BCEE /* CloseSelected.png */,
 				F9F12C18169467440014BCEE /* Default.png */,
@@ -2226,6 +2232,8 @@
 				F9F12FC0169467490014BCEE /* hello.js_BACK in Resources */,
 				F9F12FC2169467490014BCEE /* menu1.png in Resources */,
 				F9F12FC4169467490014BCEE /* menu2.png in Resources */,
+				F9F12FDC169482B10014BCEE /* js in Resources */,
+				F9F1300016948EAD0014BCEE /* res in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2479,7 +2487,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2508,7 +2516,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2525,6 +2533,7 @@
 				GCC_PREFIX_HEADER = Cocos2DxJSExample/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = Cocos2DxJSExample/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Cocos2DxJSExample/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -2550,6 +2559,7 @@
 				GCC_PREFIX_HEADER = Cocos2DxJSExample/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = Cocos2DxJSExample/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Cocos2DxJSExample/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -2586,6 +2596,7 @@
 				F9F12FC9169467490014BCEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
