@@ -34,6 +34,6 @@ public class Cocos2DxJSExample extends Cocos2dxActivity{
 	}
 	
     static {
-         System.loadLibrary("game");
+        System.loadLibrary("game");
     }
 }

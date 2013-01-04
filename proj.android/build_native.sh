@@ -37,7 +37,6 @@ fi
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # ... use paths relative to current directory
-NDK_ROOT="$HOME/dev/android/android-ndk"
 COCOS2DX_ROOT="$HOME/dev/frameworks/cocos2dx"
 APP_ROOT="$DIR/.."
 APP_ANDROID_ROOT="$DIR"

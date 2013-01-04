@@ -21,7 +21,17 @@
 						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.16966731" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
 							<targetPlatform id="org.eclipse.cdt.build.core.prefbase.toolchain.16966731.1760110126" name=""/>
 							<builder arguments="${workspace_loc:/Cocos2DxJSExample}/build_native.sh NDK_DEBUG=1 V=1" command="bash" id="org.eclipse.cdt.build.core.settings.default.builder.1334722428" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
-							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.605116309" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.605116309" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs">
+								<option id="org.eclipse.cdt.build.core.settings.holder.libpaths.1745886929" name="Library Paths" superClass="org.eclipse.cdt.build.core.settings.holder.libpaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="/Users/aentos/dev/projects/Cocos2DxJSExample/libs/cocos2dx/platform/third_party/android/prebuilt/libcurl/libs"/>
+									<listOptionValue builtIn="false" value="/Users/aentos/dev/projects/Cocos2DxJSExample/libs/cocos2dx/platform/third_party/android/prebuilt/libxml2/libs"/>
+									<listOptionValue builtIn="false" value="/Users/aentos/dev/projects/Cocos2DxJSExample/libs/javascript/spidermonkey-android/lib"/>
+								</option>
+								<option id="org.eclipse.cdt.build.core.settings.holder.libfiles.1313409096" name="Library Files" superClass="org.eclipse.cdt.build.core.settings.holder.libfiles" valueType="libFiles">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="/Users/aentos/dev/projects/Cocos2DxJSExample/libs/javascript/spidermonkey-android/lib/libjs_static.a"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="/Users/aentos/dev/projects/Cocos2DxJSExample/libs/cocos2dx/platform/third_party/android/prebuilt/libcurl/libs/armeabi/libcurl.a"/>
+								</option>
+							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.1310392900" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.70205479" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
@@ -29,7 +39,6 @@
 								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.2087817849" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/Users/aentos/dev/android/android-ndk-r8d/platforms/android-9/arch-arm/usr/include"/>
 									<listOptionValue builtIn="false" value="/Users/aentos/dev/frameworks/cocos2d-2.0-x-2.0.4/scripting/javascript/bindings"/>
-									<listOptionValue builtIn="false" value="/Users/aentos/dev/frameworks/cocos2d-2.0-x-2.0.4/cocos2dx/include"/>
 								</option>
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.290694429" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
@@ -62,4 +71,5 @@
 			<resource resourceType="PROJECT" workspacePath="/Cocos2DxJSExample"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
